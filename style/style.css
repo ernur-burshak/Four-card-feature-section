@@ -72,6 +72,33 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-cyan::before {
+  background-color: #44d3d2; /* синяя линия для card-blue */
+}
+
+.card-red::before {
+  background-color: #ea5454; /* синяя линия для card-blue */
+}
+
+.card-yellow::before {
+  background-color: #fcae4a; /* синяя линия для card-blue */
+}
+
+.card-blue::before {
+  background-color: #549ef2; /* синяя линия для card-blue */
 }
 
 .card-header-custom {
