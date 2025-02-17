@@ -58,10 +58,11 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding-bottom: 3.5rem;
 }
 
 .card {
-  height: 16.625rem;
+  height: 15.625rem;
   width: fit-content;
   max-width: 314px;
   padding: 32px;
@@ -87,6 +88,43 @@ h3 {
 .card-description {
   font-size: 0.8125rem;
   font-weight: 400;
+}
+
+.card-img-custom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-supervisor-img {
+  width: 64px;
+  height: 64px;
+  background-image: url(../images/icon-supervisor.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-team-builder-img {
+  width: 64px;
+  height: 64px;
+  background-image: url(../images/icon-team-builder.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-karma-img {
+  width: 64px;
+  height: 64px;
+  background-image: url(../images/icon-karma.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-calculator-img {
+  width: 64px;
+  height: 64px;
+  background-image: url(../images/icon-calculator.svg);
+  background-size: cover;
+  background-position: center;
 }
 
 .attribution {
