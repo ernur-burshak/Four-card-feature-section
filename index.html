@@ -1,45 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Four card feature section</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
+    <title>Frontend Mentor | Four card feature section</title>
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Supervisor
-  Monitors activity to identify project roadblocks
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 class="">Reliable, efficient delivery</h1>
+        <h2>Powered by Technology</h2>
+      </div>
+      <p class="header-description">
+        Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful
+      </p>
+    </header>
 
-  Team Builder
-  Scans our talent network to create the optimal team for your project
+    <main class="cards-container">
+      <div class="card">
+        <div class="card-supervisor">
+          <div class="card-header-custom">
+            <h3>Supervisor</h3>
+            <p class="card-description">
+              Monitors activity to identify project roadblocks
+            </p>
+          </div>
+          <div class="card-supervisor-img"></div>
+        </div>
+      </div>
 
-  Karma
-  Regularly evaluates our talent to ensure quality
+      <div class="card">
+        <div class="card-team-builder">
+          <div class="card-header-custom">
+            <h3>Team Builder</h3>
+            <p class="card-description">
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+          </div>
+          <div class="card-team-builder-img"></div>
+        </div>
+      </div>
 
-  Calculator
-  Uses data from past projects to provide better delivery estimates
+      <div class="card">
+        <div class="card-karma">
+          <div class="card-header-custom">
+            <h3>Karma</h3>
+            <p class="card-description">
+              Regularly evaluates our talent to ensure quality
+            </p>
+          </div>
+          <div class="card-karma-img"></div>
+        </div>
+      </div>
 
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+      <div class="card">
+        <div class="card-calculator">
+          <div class="card-header-custom">
+            <h3>Calculator</h3>
+            <p class="card-description">
+              Uses data from past projects to provide better delivery estimates
+            </p>
+          </div>
+          <div class="card-calculator-img"></div>
+        </div>
+      </div>
+    </main>
+
+    <!--Reliable, efficient delivery Powered by Technology Our Artificial
+    Intelligence powered tools use millions of project data points to ensure
+    that your project is successful Supervisor Monitors activity to identify
+    project roadblocks Team Builder Scans our talent network to create the
+    optimal team for your project Karma Regularly evaluates our talent to ensure
+    quality Calculator Uses data from past projects to provide better delivery
+    estimates-->
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Ernur</a>.
+      </p>
+    </footer>
+  </body>
 </html>
