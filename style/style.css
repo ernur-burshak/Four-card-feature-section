@@ -64,8 +64,8 @@ h2 {
 .card {
   height: 15.625rem;
   width: fit-content;
-  max-width: 314px;
-  padding: 32px;
+  max-width: 19.625rem;
+  padding: 2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Тень */
   transition: box-shadow 0.3s ease-in-out;
   border-radius: 8px;
@@ -152,6 +152,71 @@ h3 {
   background-image: url(../images/icon-calculator.svg);
   background-size: cover;
   background-position: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 32px;
+    justify-items: center;
+  }
+
+  .card-cyan {
+    grid-column: 1 / 3; /* Занимает две колонки */
+    grid-row: 1;
+  }
+
+  .card-red {
+    grid-column: 1 / 2; /* занимает только 1-ю колонку.*/
+    grid-row: 2;
+  }
+
+  .card-yellow {
+    grid-column: 2 / 3; /*занимает 2-ю колонку.*/
+    grid-row: 2;
+  }
+
+  .card-blue {
+    grid-column: 1 / 3; /* Занимает две колонки */
+    grid-row: 3;
+  }
+}
+
+@media (min-width: 1025px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 32px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 350px;
+  }
+
+  .card-cyan {
+    grid-column: 1; /* Занимает две колонки */
+    grid-row: 1 / 3;
+  }
+
+  .card-red {
+    grid-column: 2; /* занимает только 1-ю колонку.*/
+    grid-row: 1 / 2;
+  }
+
+  .card-yellow {
+    grid-column: 2; /*занимает 2-ю колонку.*/
+    grid-row: 2 / 3;
+  }
+
+  .card-blue {
+    grid-column: 3; /* Занимает две колонки */
+    grid-row: 1 / 3;
+  }
 }
 
 .attribution {
